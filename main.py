@@ -21,8 +21,8 @@ products = {
     "design": [
         ("Canva Pro", "50K"),
         ("CapCut Pro", "50K"),
-        ("Veo 3 Ultra 30 Ngày Dùng Chung BH (45K Credit)", "120K"),
-        ("Veo 3 Ultra 30 Ngày Dùng Riêng BH (45K Credit)", "290K"),
+        ("Veo3 Ultra Dùng Chung BH (45K Credit)", "120K"),
+        ("Veo3 Ultra Dùng Riêng BH (45K Credit)", "290K"),
         #("Veo 3 Pro (45K Credit)", "40K"),
        # ("Kling AI (215 Credit)", "10K"),
     ],
