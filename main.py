@@ -19,10 +19,10 @@ products = {
         #("Sora (7 ngày)", "10K"),
     ],
     "design": [
-        ("Canva Pro", "20K"),
-        ("CapCut Pro", "20K"),
-        ("Veo 3 Ultra (45K Credit)", "120K"),
-        ("Veo 3 Ultra (45K Credit)", "120K"),
+        ("Canva Pro", "50K"),
+        ("CapCut Pro", "50K"),
+        ("Veo 3 Ultra 30 Ngày \nDùng Chung BH (45K Credit)", "120K"),
+        ("Veo 3 Ultra 30 Ngày \nDùng Riêng BH (45K Credit)", "290K"),
         #("Veo 3 Pro (45K Credit)", "40K"),
        # ("Kling AI (215 Credit)", "10K"),
     ],
@@ -53,7 +53,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         #[InlineKeyboardButton("Thiết kế - Video (Canva, Veo 3,Kling AI)", callback_data="design")], 
        # [InlineKeyboardButton("Giải trí (YouTube)", callback_data="entertainment")], 
        # [InlineKeyboardButton("Tiện ích (HMA VPN, Gmail Pay, Outlook US)", callback_data="utility")], 
-        [InlineKeyboardButton("Gmail (Gmail)", callback_data="gmail")] 
+        [InlineKeyboardButton("Gmail", callback_data="gmail")] 
     ]
 
     await update.message.reply_text(
