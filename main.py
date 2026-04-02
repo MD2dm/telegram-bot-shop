@@ -1,13 +1,17 @@
+from dotenv import load_dotenv
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 import random
+import os
 
-TOKEN = "8619468927:AAHO36wRy6dYqhz0jvDRXvb8gCuD-49V7Xk"
-ADMIN_CHAT_ID = 123456789  # đổi thành chat id của bạn
+load_dotenv()
 
-# ===== CONFIG BANK =====
-BANK = "TCB"           # Vietcombank (có thể đổi: MBB, TCB,...)
-ACCOUNT = "6302032003"  # STK của bạn
+TOKEN = os.getenv("TOKEN")
+ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")
+ACCOUNT = os.getenv("ACCOUNT")
+BANK = os.getenv("BANK")
+
 
 # ===== DATA =====
 products = {
