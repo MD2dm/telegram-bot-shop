@@ -57,7 +57,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
 
     await update.message.reply_text(
-        "🔥 CHÀO MỪNG BẠN ĐẾN SHOP 🔥\nChọn danh mục:",
+        "🔥 Account MMO xin chào quý khách! 🔥\n🔥 Nơi cung cấp tool & dịch vụ kiếm tiền online uy tín: \n👉 Chọn sản phẩm để bắt đầu ngay!:",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
