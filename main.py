@@ -12,18 +12,19 @@ ACCOUNT = "6302032003"  # STK của bạn
 # ===== DATA =====
 products = {
     "ai": [
-        ("ChatGPT Plus", "30K"),
-        ("ChatGPT Business", "30K"),
-        ("Gemini", "30K"),
-        ("Grok (7 ngày)", "10K"),
-        ("Sora (7 ngày)", "10K"),
+        ("ChatGPT Plus", "50K"),
+        ("ChatGPT Business", "50K"),
+       # ("Gemini", "50K"),
+       # ("Grok (7 ngày)", "10K"),
+        #("Sora (7 ngày)", "10K"),
     ],
     "design": [
         ("Canva Pro", "20K"),
         ("CapCut Pro", "20K"),
         ("Veo 3 Ultra (45K Credit)", "120K"),
-        ("Veo 3 Pro (45K Credit)", "40K"),
-        ("Kling AI (215 Credit)", "10K"),
+        ("Veo 3 Ultra (45K Credit)", "120K"),
+        #("Veo 3 Pro (45K Credit)", "40K"),
+       # ("Kling AI (215 Credit)", "10K"),
     ],
     "entertainment": [
         ("YouTube Premium", "30K"),
@@ -46,10 +47,12 @@ products = {
 # ===== START MENU =====
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("AI Tools (ChatGPT, Gemini, Grok, Sora)", callback_data="ai")], 
-        [InlineKeyboardButton("Thiết kế - Video (Canva, Veo 3,Kling AI)", callback_data="design")], 
-        [InlineKeyboardButton("Giải trí (YouTube)", callback_data="entertainment")], 
-        [InlineKeyboardButton("Tiện ích (HMA VPN, Gmail Pay, Outlook US)", callback_data="utility")], 
+       # [InlineKeyboardButton("AI Tools (ChatGPT, Gemini, Grok, Sora)", callback_data="ai")], 
+        [InlineKeyboardButton("(ChatGPT", callback_data="ai")], 
+        [InlineKeyboardButton("Canva, Veo 3, CapCut", callback_data="design")], 
+        #[InlineKeyboardButton("Thiết kế - Video (Canva, Veo 3,Kling AI)", callback_data="design")], 
+       # [InlineKeyboardButton("Giải trí (YouTube)", callback_data="entertainment")], 
+       # [InlineKeyboardButton("Tiện ích (HMA VPN, Gmail Pay, Outlook US)", callback_data="utility")], 
         [InlineKeyboardButton("Gmail (Gmail)", callback_data="gmail")] 
     ]
 
