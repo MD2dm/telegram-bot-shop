@@ -48,7 +48,7 @@ products = {
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
        # [InlineKeyboardButton("AI Tools (ChatGPT, Gemini, Grok, Sora)", callback_data="ai")], 
-        [InlineKeyboardButton("(ChatGPT", callback_data="ai")], 
+        [InlineKeyboardButton("ChatGPT", callback_data="ai")], 
         [InlineKeyboardButton("Canva, Veo 3, CapCut", callback_data="design")], 
         #[InlineKeyboardButton("Thiết kế - Video (Canva, Veo 3,Kling AI)", callback_data="design")], 
        # [InlineKeyboardButton("Giải trí (YouTube)", callback_data="entertainment")], 
